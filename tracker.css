@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url('signbg3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.sidemenu {
+    border-radius: 10px;
+    background-color: #90EE90;
+    color: #fff;
+    width: 200px;
+    height: 90vh;
+    position: fixed;
+    padding: 20px;
+    top: 10px;
+    left: -220px; 
+    transition: left 0.3s ease;
+    z-index: 100;
+}
+
+.sidemenu:hover {
+    left: 0;
+}
+
+.sidemenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidemenu ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidemenu ul li:hover {
+    background-color: #77B300;
+}
+
+.sidemenu ul li.active {
+    background-color: #77B300;
+    font-weight: bold;
+}
+
+.sidemenu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: rgb(85, 85, 238);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.exit {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 24px;
+}
+
+#hero {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.gradient-text {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #FF5733, #33FF57, #3357FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+#budget-planner {
+    padding: 40px;
+    text-align: center; 
+}
+
+.budget-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: black;
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+#expense-tracker {
+    padding: 40px;
+    text-align: center; 
+}
+
+.expense-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+.set-budget input,
+.add-expense input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #77B300;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a9300;
+}
+
+.budget-status p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#expense-list {
+    margin-top: 20px;
+}
+
+#expense-list .expense-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+div {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+div:hover {
+    box-shadow: 0 0 20px 5px rgba(119, 179, 0, 0.8); 
+    transform: scale(1.05); 
+}

@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.sidemenu {
+    border-radius: 10px;
+    background-color: #90EE90;
+    color: #fff;
+    width: 200px;
+    height: 90vh;
+    position: fixed;
+    padding: 20px;
+    top: 10px;
+    left: -220px;
+    transition: left 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    z-index: 100;
+}
+
+.sidemenu:hover {
+    left: 0;
+}
+
+.sidemenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidemenu ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidemenu ul li:hover {
+    background-color: #77B300;
+}
+
+.sidemenu ul li.active {
+    background-color: #77B300;
+    font-weight: bold;
+}
+
+.sidemenu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: rgb(85, 85, 238);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.exit {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 24px;
+}
+
+#hero {
+    text-align: center;
+    padding: 0;
+    background-image: url('k.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.welcome-box:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.7);
+    transform: scale(1.05);
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.gradient-text {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #FF5733, #33FF57, #3357FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.typing-animation {
+    font-size: 1.75rem;
+    color: white;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+#hero p {
+    font-size: 1.5rem;
+    color: white;
+}

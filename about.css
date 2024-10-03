@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-image: url('signbg3.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.sidemenu {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 200px;
+    height: 90vh;
+    position: fixed;
+    padding: 20px;
+    top: 10px;
+    left: -220px;
+    transition: left 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    z-index: 100;
+}
+
+.sidemenu:hover {
+    left: 0;
+}
+
+.sidemenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidemenu ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidemenu ul li:hover {
+    background-color: #77B300;
+}
+
+.sidemenu ul li.active {
+    background-color: #77B300;
+    font-weight: bold;
+}
+
+.sidemenu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#crypto-section {
+    padding: 20px;
+    margin-left: 220px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.crypto-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.crypto-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.crypto-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
